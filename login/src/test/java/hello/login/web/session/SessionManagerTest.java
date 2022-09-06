@@ -21,7 +21,7 @@ class SessionManagerTest {
 
         //요청에 응답 쿠키 저장
         MockHttpServletRequest request = new MockHttpServletRequest();
-        request.setCookies(response.getCookies()); // mySessionId=123123-123213-32
+        request.setCookies(response.getCookies());
 
         //세션 조회
         Object result = sessionManager.getSession(request);
